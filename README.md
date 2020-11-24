@@ -2,5 +2,8 @@
 # http://postolenko.github.io/okiro/remont.html
 # http://postolenko.github.io/okiro/delivery.html
 # http://postolenko.github.io/okiro/news.html
+# http://postolenko.github.io/okiro/news_single.html
 # http://postolenko.github.io/okiro/remont.html
 # http://postolenko.github.io/okiro/sotrudnichestvo.html
+# http://postolenko.github.io/okiro/catalog.html
+# http://postolenko.github.io/okiro/predoplata.html
