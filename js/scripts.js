@@ -179,34 +179,62 @@ $(document).ready(function() {
 
     // --------------
 
-    $(".count-box button").click(function(e) {
+    $(".count_box button").click(function(e) {
         e.preventDefault();
-        parentBlock = $(this).closest(".count-box");
-        cardRow = parentBlock.closest(".table-row");
-        priceValEl = cardRow.find(".price_val");
-        priceVal = parseInt( priceValEl.text() );
-        countInput = parentBlock.find(".count-num input");
+        parentBlock = $(this).closest(".count_box");
+        countInput = parentBlock.find(".count_num input");
         countVal = countInput.val();
         if(countVal == "") {
             countVal = 1;
         }
-        if( $(this).hasClass("minus-btn") && countVal > 1 ) {
+        if( $(this).hasClass("minus_btn") && countVal > 1 ) {
             countVal--;
-        } else if( $(this).hasClass("plus-btn")) {
+        } else if( $(this).hasClass("plus_btn")) {
             countVal++;
         }
         countInput.val(countVal);
-        cardRow.find(".price_total_val").text(priceVal * countVal);
     });
 
+    // -------------
 
-    $(".count-num input").on("keyup", function(e) {
-        cardRow = $(this).closest(".table-row");
-        countVal = $(this).val();
-        priceValEl = cardRow.find(".price_val");
-        priceVal = parseInt( priceValEl.text() );
-        cardRow.find(".price_total_val").text(priceVal * countVal);
-    });
+    if( $(".big_slider").length > 0 ) {
+        $(".big_slider").not(".slick-initialized").slick({
+            dots: false,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 1200,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: true,
+            asNavFor: '.miniature_slider',
+        });
 
+        $('.miniature_slider').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          asNavFor: '.big_slider',
+          dots: false,
+          focusOnSelect: true,
+          arrows: true,
+          vertical: true,
+          prevArrow: $("#topBtn"),
+          nextArrow: $("#bottomBtn"),
+          verticalSwiping: true
+        });
+    }
+
+    if( $(".goods_cards_2").length > 0 ) {
+        $(".goods_cards_2").not(".slick-initialized").slick({
+            dots: false,
+            arrows: false,
+            // autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 1200,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            // variableWidth: true
+        });
+    }
 
 });

@@ -292,16 +292,16 @@ textarea:focus {
     z-index: 2;
     position: absolute;
     top: 50%;
-    opacity: .6;
+    /*opacity: .6;*/
     margin-top: -40px;
     background: #ffffff;
     border: 1px solid transparent;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .5);
+/*    -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .5);
     -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .5);
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .5);*/
     -webkit-transition-property: box-shadow, opacity;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
@@ -325,9 +325,9 @@ textarea:focus {
 
 .slick-arrow:hover {
     opacity: 1;
-    -webkit-box-shadow: 0 1px 12px 0 rgba(0, 0, 0, .5);
+/*    -webkit-box-shadow: 0 1px 12px 0 rgba(0, 0, 0, .5);
     -moz-box-shadow: 0 1px 12px 0 rgba(0, 0, 0, .5);
-    box-shadow: 0 1px 12px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 1px 12px 0 rgba(0, 0, 0, .5);*/
 }
 
 .slick-arrow img {
@@ -2884,9 +2884,586 @@ textarea:focus {
 
 /*-- Section 1 - Card --*/
 
+.card_templ {
+    display: flex;
+    display: -webkit-flex;
+    margin: 24px 0 42px 0;
+}
 
+.card_templ .left {
+    width: 51%;
+}
 
-/*-- /Section 1 - Card --*/
+.card_templ .right {
+    width: 49%;
+    padding-left: 20px;
+}
+
+.card_slider {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.card_slider .col_1 {
+    width: calc(100% - 220px);
+    order: 2;
+    padding-left: 10px;
+}
+
+.card_slider .col_2 {
+    width: 220px;
+    order: 1;
+    padding: 11px 10px 0 0;
+}
+
+.big_slider {
+
+}
+
+.big_slider .slide {
+    padding: 10px 0;
+}
+
+.big_slider .slide .img_box {
+    width: 100%;
+    height: 490px;
+    background-size: cover;
+    background-position: center;
+}
+
+.miniature_slider_wrapp {
+    height: 435px;
+    overflow: hidden;
+}
+
+.miniature_slider {
+    height: 441px;
+    width: 210px;
+    margin-top: -6px;
+}
+
+.miniature_slider .slick-arrow {
+    z-index: -2;
+}
+
+.miniature_slider .slide {
+    width: 211px;
+    height: 148px;
+    padding: 5px 0;
+}
+
+.miniature_slider .slide .img_box {
+    height: 138px;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider_btns {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    padding: 10px 0 0 0;
+}
+
+.slider_btns button {
+    display: block;
+    cursor: pointer;
+    height: 44px;
+    width: 96px;
+    border-radius: 0;
+    box-shadow: 0;
+    background: #fff !important;
+    border: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+.cardt_templ_inner {
+    max-width: 548px;
+}
+
+.card_templ h1 {
+    padding: 5px 0 0 0;
+    text-transform: none;
+}
+
+.price_inline {
+    display: flex;
+    display: -webkit-flex;
+    align-items: baseline;
+    -webkit-align-items: baseline;
+    margin: 0 -5px;
+}
+
+.price_inline > div {
+    padding: 0 5px;
+}
+
+.old_price {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 1px;
+    position: relative;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: #090708;
+    opacity: .3;
+}
+
+.old_price:before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #090708;
+    opacity: .3;
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+}
+
+.card_templ .breadcrumbs {
+    margin: 4px -2px;
+}
+
+.red_price {
+    position: relative;
+    top: 1px;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    color: #BD1515;
+}
+
+.card_descript {
+    padding: 29px 0 14px 0;
+}
+
+.card_descript p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    color: rgba(0, 0, 0, .5);
+}
+
+.links_wrapp {
+    display: flex;
+    display: -webkit-flex;
+    margin: 4px 0;
+}
+
+.links_wrapp > div {
+
+}
+
+.links_wrapp p {
+    padding-right: 5px;
+}
+
+.links {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 0 5px;
+}
+
+.color_link {
+    display: block;
+    margin: 3px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+.inlines_2 {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 12px -3px;
+}
+
+.inlines_2 > div {
+    padding: 3px;
+}
+
+.count_box {
+    display: flex;
+    display: -webkit-flex;
+    width: 148px;
+    height: 50px;
+    border: 1px solid #E0E0E0;
+}
+
+.count_button_wrapp {
+    width: 50px;
+}
+
+.count_num {
+    width: 48px;
+}
+
+.count_num input {
+    display: block;
+    width: 100%;
+    height: 48px;
+    background-color: #fff;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 47px;
+    text-align: center;
+    color: #4F4F4F;
+}
+
+.count_button_wrapp button {
+    display: block;
+    width: 100%;
+    height: 48px;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+}
+
+.minus_btn {
+    background-image: url(img/minus.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.plus_btn {
+    background-image: url(img/plus.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.count_button_wrapp button.minus_btn {
+    border-right: 1px solid #E0E0E0;
+}
+
+.count_button_wrapp button.plus_btn {
+    border-left: 1px solid #E0E0E0;
+}
+
+.red_pill_3 {
+    min-width: 148px;
+    padding: 10px 10px 7px 10px;
+}
+
+.table_items {
+    padding: 2px 0;
+}
+
+.table_items .table_row {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.table_items .table_row .cell:nth-child(1) {
+    width: 115px;
+    padding: 0 5px 0 0;
+}
+
+.table_items .table_row .cell:nth-child(2) {
+    width: calc(100% - 115px);
+    padding: 0 0 0 5px;
+}
+
+.table_items h3 {
+    padding: 9px 0;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.table_items p {
+    padding: 9px 0;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.social_list_2.social_list_3 {
+    margin: 0 -6px;
+}
+
+.social_list_2.social_list_3 li {
+    padding: 6px;
+}
+
+.social_list_2.social_list_3 li a {
+    width: 27px;
+    height: 27px;
+}
+
+.templ_wrapp {
+    padding: 10px 0;
+}
+
+.templ_wrapp_title {
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+}
+
+.templ_wrapp_title h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #090708;
+}
+
+.characteristic_templ {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.characteristic_templ .left {
+    width: 42%;
+    padding-right: 5px;
+}
+
+.characteristic_templ .right {
+    width: 58%;
+    padding-left: 5px;
+}
+
+.table_2 {
+    margin: 30px 0;
+}
+
+.table_2 .table_row {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.table_2 .table_row .cell:nth-child(1) {
+    width: 60%;
+    padding: 2px 5px 2px 0;
+}
+
+.table_2 .table_row .cell:nth-child(2) {
+    width: 40%;
+    padding: 2px 0 2px 5px;
+}
+
+.table_2 h3 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #090708;
+}
+
+.table_2 p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #090708;
+}
+
+.compl_box {
+
+}
+
+.compl_box h3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #090708;
+}
+
+.compl_box ul {
+    padding: 30px 0;
+}
+
+.compl_box ul li {
+    padding: 2px 0;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #090708;
+}
+
+.white_box {
+    margin: 33px 0;
+    padding: 18px 30px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .25);
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .25);
+}
+
+.white_box p {
+    padding: 16px 0;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 170%;
+    color: #000000;
+}
+
+.white_box p b {
+    font-weight: 500;
+}
+
+.goods_cards_2 {
+    margin: 22px 0 0 0;
+}
+
+.goods_cards_2 .slide {
+    padding-bottom: 150px;
+}
+
+.goods_cards_2 .good_card {
+    width: 220px;
+}
+
+/*-- /Section 1 - Card --*/               
+
+/*-- Section 1 - Contacts --*/
+
+.contacts_thumbnails {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.contact_thumb {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.contact_thumb > div:nth-child(1) {
+    width: 50%;
+}
+
+.contact_thumb > div:nth-child(2) {
+    width: 50%;
+}
+
+.thumb_logo {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.table_3 {
+    
+}
+
+.table_3 .table_row {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.table_3 .table_row .cell:nth-child(1) {
+    width: 160px;
+}
+
+.table_3 .table_row .cell:nth-child(2) {
+    width: calc(100% -160px);
+}
+
+.table_3 .table_row .cell:nth-child(1) p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #090708;
+}
+
+.table_3 .table_row .cell:nth-child(2) p,
+.table_3 .table_row .cell:nth-child(2) p a {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: #090708;
+}
+
+.contact_thumb h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #BD1515;
+}
+
+.contact_thumb p {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: #090708;
+}
+
+.map_thumb {
+
+}
+
+/*-- /Section 1 - Contacts --*/
+
+/*-- Section 2 - Contacts --*/
+
+.h2_wrapp {
+
+}
+
+.h2_wrapp h2 {
+
+}
+
+.contact_thumbs_2_wrapp {
+
+}
+
+.contact_thumbs_2 {
+
+}
+
+.contact_thumbs_2 h3 {
+
+}
+
+.contact_thumbs_2 p {
+
+}
+
+.thumb_table {
+
+}
+
+.thumb_table .table_row {
+
+}
+
+.thumb_table .table_row .cell:nth-child(1) {
+
+}
+
+.thumb_table .table_row .cell:nth-child(2) {
+
+}
+
+.thumb_table .table_row .cell:nth-child(1) p {
+
+}
+
+.thumb_table .table_row .cell:nth-child(2) p {
+
+}
+
+.thumb_table .table_row .cell:nth-child(2) p a {
+
+}
+
+/*-- /Section 2 - Contacts --*/
+
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */

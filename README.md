@@ -7,3 +7,4 @@
 # http://postolenko.github.io/okiro/sotrudnichestvo.html
 # http://postolenko.github.io/okiro/catalog.html
 # http://postolenko.github.io/okiro/predoplata.html
+# http://postolenko.github.io/okiro/card.html
