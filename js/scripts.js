@@ -64,46 +64,45 @@ $(document).ready(function() {
 
     // ----------------------
 
-    // ymaps.ready(function () {
-    //     if($("#map").length > 0) {
-    //         var myMap = new ymaps.Map('map', {
-    //             center: [55.755814, 37.617635],
-    //             zoom: 14
-    //         }, {
-    //             searchControlProvider: 'yandex#search'
-    //         });
-    //         myPlacemark1 = new ymaps.Placemark([55.755814, 37.617635], {
-    //             hintContent: ''
-    //         }, {
-    //             // iconLayout: 'default#imageWithContent',
-    //             // iconImageHref: 'img/yellow_marker.png',
-    //             // iconImageSize: [39, 35],
-    //             // iconImageOffset: [19, -17]
-    //         });
-    //         myMap.geoObjects.add(myPlacemark1);
-    //     }
-    // });
+    if($("#map").length > 0) {
+        ymaps.ready(function () {        
+            var myMap = new ymaps.Map('map', {
+                center: [55.755814, 37.617635],
+                zoom: 14
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+            myPlacemark1 = new ymaps.Placemark([55.755814, 37.617635], {
+                hintContent: ''
+            }, {
+                // iconLayout: 'default#imageWithContent',
+                // iconImageHref: 'img/yellow_marker.png',
+                // iconImageSize: [39, 35],
+                // iconImageOffset: [19, -17]
+            });
+            myMap.geoObjects.add(myPlacemark1);        
+        });
+    }
 
-    // ymaps.ready(function () {
-    //     if($("#map2").length > 0) {
-    //         var myMap2 = new ymaps.Map('map2', {
-    //             center: [55.755814, 37.617635],
-    //             zoom: 14
-    //         }, {
-    //             searchControlProvider: 'yandex#search'
-    //         });
-    //         myPlacemark2 = new ymaps.Placemark([55.755814, 37.617635], {
-    //             hintContent: ''
-    //         }, {
-    //             // iconLayout: 'default#imageWithContent',
-    //             // iconImageHref: 'img/yellow_marker.png',
-    //             // iconImageSize: [39, 35],
-    //             // iconImageOffset: [19, -17]
-    //         });
-    //         myMap2.geoObjects.add(myPlacemark2);
-    //     }
-    // });
-
+    if($("#map2").length > 0) {
+        ymaps.ready(function () {        
+            var myMap2 = new ymaps.Map('map2', {
+                center: [55.755814, 37.617635],
+                zoom: 14
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+            myPlacemark2 = new ymaps.Placemark([55.755814, 37.617635], {
+                hintContent: ''
+            }, {
+                // iconLayout: 'default#imageWithContent',
+                // iconImageHref: 'img/yellow_marker.png',
+                // iconImageSize: [39, 35],
+                // iconImageOffset: [19, -17]
+            });
+            myMap2.geoObjects.add(myPlacemark2);
+        });
+    }
 
     // ------------
 
@@ -235,6 +234,50 @@ $(document).ready(function() {
             slidesToScroll: 1,
             // variableWidth: true
         });
+    }
+
+    // ---------
+
+     if($("#map_3").length > 0) {
+        ymaps.ready(function () {       
+            var myMap3 = new ymaps.Map('map_3', {
+                center: [55.755814, 37.617635],
+                zoom: 14
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+            myPlacemark3 = new ymaps.Placemark([55.755814, 37.617635], {
+                hintContent: ''
+            }, {
+                // iconLayout: 'default#imageWithContent',
+                // iconImageHref: 'img/yellow_marker.png',
+                // iconImageSize: [39, 35],
+                // iconImageOffset: [19, -17]
+            });
+            myMap3.geoObjects.add(myPlacemark3);        
+        });
+    }
+
+    if($("#map_4").length > 0) {
+
+        ymaps.ready(function () {        
+            var myMap4 = new ymaps.Map('map_4', {
+                center: [55.755814, 37.617635],
+                zoom: 14
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+            myPlacemark4 = new ymaps.Placemark([55.755814, 37.617635], {
+                hintContent: ''
+            }, {
+                // iconLayout: 'default#imageWithContent',
+                // iconImageHref: 'img/yellow_marker.png',
+                // iconImageSize: [39, 35],
+                // iconImageOffset: [19, -17]
+            });
+            myMap4.geoObjects.add(myPlacemark4);        
+        });
+
     }
 
 });

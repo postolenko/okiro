@@ -10,7 +10,6 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">	
 	<title></title>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 
 <body>
@@ -254,7 +253,7 @@
 					<h1>Контакты</h1>
 				</div>
 				<div class="contacts_thumbnails">
-					<div class="contact_thumb">
+					<div class="contact_thumb grey_thumb">
 						<div>
 							<div class="inner">
 								<div class="table_3">
@@ -319,15 +318,17 @@
 						</div>
 						<div>
 							<div class="inner">
-								<img class="thumb_logo" src="img/" alt="" />
+								<img class="thumb_logo" src="img/thumb_logo.svg" alt="" />
 							</div>
 						</div>
 					</div>
 					<div class="contact_thumb">
 						<div>
 							<div class="inner">
-								<h3>Шоу-рум на метро Краснопресненская:</h3>
-								<p>Дружинниковская улица, 11/2. Пешком можно дойти с метро Краснопресненская – 5 минут. Часы работы: с 11 до 19 часов. Без выходных. Тел: 8 800 550-44-14 Прием посетителей осуществляется по предварительному звонку.</p>
+								<div>
+									<h3>Шоу-рум на метро Краснопресненская:</h3>
+									<p>Дружинниковская улица, 11/2. Пешком можно дойти с метро Краснопресненская – 5 минут. Часы работы: с 11 до 19 часов. Без выходных. Тел: 8 800 550-44-14 Прием посетителей осуществляется по предварительному звонку.</p>
+								</div>
 							</div>
 						</div>
 						<div>
@@ -337,8 +338,10 @@
 					<div class="contact_thumb">
 						<div>
 							<div class="inner">
-								<h3>Пункт самовывоза на метро Кожуховская:</h3>
-								<p>Москва, улица Южнопортовая, дом 7 стр. 2. Пункт выдачи Интеграл. Пять минут пешком от метро Кожуховская. Часы работы с 10 до 20 ежедневно. Прием посетителей осуществляется по предварительному звонку.</p>
+								<div>
+									<h3>Пункт самовывоза на метро Кожуховская:</h3>
+									<p>Москва, улица Южнопортовая, дом 7 стр. 2. Пункт выдачи Интеграл. Пять минут пешком от метро Кожуховская. Часы работы с 10 до 20 ежедневно. Прием посетителей осуществляется по предварительному звонку.</p>
+								</div>
 							</div>
 						</div>
 						<div>
@@ -353,7 +356,7 @@
 
 		<!-- Section 2 - Contacts -->
 
-		<section>
+		<section class="sect_2_c_p">
 			<div class="row">
 				<div class="h2_wrapp">
 					<h2>Наши представительства</h2>
@@ -361,7 +364,7 @@
 				<div class="contact_thumbs_2_wrapp">
 					<div class="contact_thumbs_2">
 						<h3>Москва,	РуКомфорт</h3>
-						<p>Адрес: г.Москва: м.Кантемировская, ул. Промышленная, 11, строение 3, подъезд 4</p>
+						<p><b>Адрес:</b> г.Москва: м.Кантемировская, ул. Промышленная, 11, строение 3, подъезд 4</p>
 						<div class="thumb_table">
 							<div class="table_row">
 								<div class="cell">
@@ -393,7 +396,7 @@
 					</div>
 					<div class="contact_thumbs_2">
 						<h3>Екатеринбург ИП Шпук Екатерина Борисовна</h3>
-						<p>Адрес: г. Екатеринбург, ул. Уральская 3</p>
+						<p><b>Адрес:</b> г. Екатеринбург, ул. Уральская 3</p>
 						<div class="thumb_table">
 							<div class="table_row">
 								<div class="cell">
@@ -415,7 +418,7 @@
 					</div>
 					<div class="contact_thumbs_2">
 						<h3>Краснодар, РуКомфорт</h3>
-						<p>Адрес: г. Краснодар, ул. 40 Лет Победы, 14/2 (район ЗИПовской больницы)</p>
+						<p><b>Адрес:</b> г. Краснодар, ул. 40 Лет Победы, 14/2 (район ЗИПовской больницы)</p>
 						<div class="thumb_table">
 							<div class="table_row">
 								<div class="cell">
@@ -438,7 +441,7 @@
 					</div>
 					<div class="contact_thumbs_2">
 						<h3>Армавир, РуКомфорт</h3>
-						<p>Адрес: г.Армавир, ул. Фрунзе, 7, оф 111</p>
+						<p><b>Адрес:</b> г.Армавир, ул. Фрунзе, 7, оф 111</p>
 						<div class="thumb_table">
 							<div class="table_row">
 								<div class="cell">
@@ -543,6 +546,7 @@
 	<script src="vendors/js/jquery.fancybox.js"></script>
 	<script src="vendors/js/nouislider.min.js"></script>
 	<script src="vendors/js/wNumb.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU"></script>
 	<script src="js/scripts.js"></script>
 
 </body>
