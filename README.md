@@ -9,3 +9,4 @@
 # http://postolenko.github.io/okiro/predoplata.html
 # http://postolenko.github.io/okiro/card.html
 # http://postolenko.github.io/okiro/contacts.html
+# http://postolenko.github.io/okiro/basket.html

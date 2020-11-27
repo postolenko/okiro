@@ -3594,6 +3594,347 @@ textarea:focus {
 
 /*-- /Section 2 - Contacts --*/
 
+/*-- Section 1 - Basket --*/
+
+.basket_templ {
+    display: flex;
+    display: -webkit-flex;
+    margin: 16px 0 10px 0;
+}
+
+.basket_templ > .left {
+    width: 58%;
+    padding: 20px 20px 20px 0;
+}
+
+.basket_templ > .right {
+    width: 42%;
+    padding: 20px 0 20px 20px;
+}
+
+.basket_table {
+
+}
+
+.basket_table .table_row {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    border-bottom: 1px solid #E9E9E9;
+    padding: 30px 20px 30px 0;
+}
+
+.basket_table .table_header {
+    padding: 2px 20px 2px 0;
+}
+
+.basket_table .table_row .cell:nth-child(1) {
+    width: 50%;
+}
+
+.basket_table .table_row .cell:nth-child(2) {
+    width: 17%;
+    text-align: right;
+}
+
+.basket_table .table_row .cell:nth-child(3) {
+    width: 16%;
+    text-align: center;
+}
+
+.basket_table .table_row .cell:nth-child(4) {
+    width: 17%;
+    text-align: right;
+}
+
+.basket_table h3 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 150%;
+    color: #333333; 
+}
+
+.good_thumb_2 {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.good_thumb_2 div:nth-child(1) {
+    width: 200px;
+}
+
+.good_thumb_2 div:nth-child(2) {
+    width: calc(100% - 200px);
+}
+
+.good_thumb_2 .img_box {
+    max-width: 170px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.good_thumb_2 .img_box img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+}
+
+.good_thumb_2 p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    color: #333333;
+}
+
+.old_price_2 {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 150%;
+    text-decoration-line: line-through;
+    color: #BDBDBD;
+}
+
+.price_2 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 125%;
+    color: #333333;
+}
+
+.count_2 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 125%;
+    color: #333333;
+}
+
+.form_wrapp_2 {
+    margin: 36px 0 10px 0;
+}
+
+.order_box {
+    padding: 25px 20px 30px 20px;
+    background: rgba(189, 21, 21, .05);
+}
+
+.order_box_title {
+    padding: 10px 0 37px 0;
+    text-align: center;
+}
+
+.order_box_title h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.order_table {
+
+}
+
+.order_table .table_row {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    border-bottom: 1px solid #fff;
+}
+
+.order_table .table_row.table_header {
+    padding: 10px 0;
+}
+
+.order_table .table_row {
+    padding: 24px 0;
+}
+
+.order_table .table_row .cell:nth-child(1) {
+    width: 60%;
+    padding: 0 5px 0 0;
+}
+
+.order_table .table_row .cell:nth-child(2) {
+    width: 40%;
+    padding: 0 0 0 5px;
+    text-align: right;
+}
+
+.order_table h3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.order_table p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    color: #090708;
+}
+
+.order_box_table_wrap {
+    padding: 14px 0 0 0;
+    border-bottom: 1px solid #fff;
+}
+
+.order_box_table_title {
+
+}
+
+.order_box_table_title h2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #090708;
+}
+
+.order_table_2 {
+    padding: 14px 0 9px 0;
+}
+
+.order_table_2 .table_row {
+    display: flex;
+    display: -webkit-flex;
+    padding: 3px 0;
+}
+
+.order_table_2 .table_row .cell:nth-child(1) {
+    width: calc(100% - 80px);
+    padding-right: 5px;
+}
+
+.order_table_2 .table_row .cell:nth-child(2) {
+    width: 80px;
+    padding-left: 5px;
+}
+
+.order_table_2 p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    color: #090708;
+}
+
+.order_table_2 p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    color: #090708;
+}
+
+.radio_wrapp_2 label {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 30px;
+    position: relative;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    color: #090708;
+}
+
+.radio_wrapp_2 label input {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, .15);
+    position: absolute;
+    top: -1px;
+    left: 0;
+}
+
+.radio_wrapp_2 label input + .ch {
+    display: none;
+    width: 17px;
+    height: 17px;
+    background-image: url(img/checked.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    margin-top: -9px;
+}
+
+.radio_wrapp_2 label input:checked + .ch {
+    display: block;
+}
+
+.order_box_footer {
+    display: flex;
+    display: -webkit-flex;
+    padding: 24px 0 19px 0;
+    border-bottom: 1px solid #fff; 
+}
+
+.order_box_footer .cell:nth-child(1) {
+    width: 55%;
+    padding-right: 5px;
+}
+
+.order_box_footer .cell:nth-child(2) {
+    width: 45%;
+    padding-left: 5px;
+    text-align: right;
+}
+
+.order_box_footer h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #090708;
+}
+
+.red_price {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #BD1515;
+}
+
+/*-- /Section 1 - Basket --*/
+
+/*-- Section 1 - Comprasion --*/
+
+.goods_cards_3 {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    margin: 0 -8px;
+}
+
+.goods_cards_3 .good_card {
+    width: 211px;
+}
+
+
+/*-- /Section 1 - Comprasion --*/
+
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
