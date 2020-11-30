@@ -1,3 +1,11 @@
+function getSlidesHeight() {
+    $(".slider_2 .slide").css({"height" : "auto"});
+    slidesHeight = $(".siderHeight").outerHeight(true) + 20;
+    $(".slider_2 .slide").each(function() {
+        $(this).height(slidesHeight);
+    });
+}
+
 var w = window,
 d = document,
 e = d.documentElement,
@@ -12,9 +20,9 @@ $(window).load(function() {
 });
 
 $(window).resize(function() {
-
-
-
+    setTimeout(function() {
+        getSlidesHeight();
+    }, 300);
 });
 
 $(document).scroll(function() {
@@ -24,6 +32,8 @@ $(document).scroll(function() {
 });
 
 $(document).ready(function() {
+
+    getSlidesHeight();
 
     // if( $(".portfolio_slider").length > 0 ) {
     //     $(".portfolio_slider").not(".slick-initialized").slick({
@@ -278,6 +288,54 @@ $(document).ready(function() {
             myMap4.geoObjects.add(myPlacemark4);        
         });
 
+    }
+
+    // ----------------
+
+    if( $(".promo_slider").length > 0 ) {
+        $(".promo_slider").not(".slick-initialized").slick({
+            dots: false,
+            arrows: true,
+            // autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 1200,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: true,
+            prevArrow: $(".promo_slider_prev"),
+            nextArrow: $(".promo_slider_next")
+        });
+    }
+
+    // ----------------
+
+    if( $(".offer_slider").length > 0 ) {
+        $(".offer_slider").not(".slick-initialized").slick({
+            dots: false,
+            arrows: true,
+            // autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 1200,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            variableWidth: true,
+            appendArrows: $(".offer_slider_arrows")
+        });
+    }
+
+    // ----------------
+
+    if( $(".slider_2").length > 0 ) {
+        $(".slider_2").not(".slick-initialized").slick({
+            dots: false,
+            arrows: true,
+            // autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 1200,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: true
+        });
     }
 
 });

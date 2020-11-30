@@ -1,3 +1,4 @@
+# http://postolenko.github.io/okiro/index.html
 # http://postolenko.github.io/okiro/politic.html
 # http://postolenko.github.io/okiro/remont.html
 # http://postolenko.github.io/okiro/delivery.html
@@ -10,3 +11,4 @@
 # http://postolenko.github.io/okiro/card.html
 # http://postolenko.github.io/okiro/contacts.html
 # http://postolenko.github.io/okiro/basket.html
+# http://postolenko.github.io/okiro/comparison.html
