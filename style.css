@@ -4937,8 +4937,32 @@ textarea:focus {
 }
 
 .order_box {
+    position: relative;
     padding: 25px 20px 30px 20px;
     background: rgba(189, 21, 21, .05);
+}
+
+.order_box:before {
+    width: 100%;
+    height: 10px;
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    background-repeat: repeat-x;
+    background-image: url(img/order_box_shape.svg);
+    transform: rotate(-180deg);
+}
+
+.order_box:after {
+    width: 100%;
+    height: 10px;
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-repeat: repeat-x;
+    background-image: url(img/order_box_shape.svg);
 }
 
 .order_box_title {

@@ -14,12 +14,23 @@
 
 <body>
 
+	<div class="inners_menus">
+		<ul class="sub_menu" data-submenu = "sub_1">
+			<li><a href="#">Бьюти кейс для визажиста</a></li>
+			<li><a href="#">Мобильная студия для визажиста</a></li>
+			<li><a href="#">Чемодан-сумка для визажиста</a></li>
+		</ul>
+		<ul class="sub_menu" data-submenu = "sub_2">
+			<li><a href="#">Бьюти кейс для визажиста 2</a></li>
+			<li><a href="#">Мобильная студия для визажиста 2</a></li>
+			<li><a href="#">Чемодан-сумка для визажиста 2</a></li>
+		</ul>
+	</div>
+
 	<div class="wrapper">
 
-	<!-- Header -->
-		
+	<!-- Header -->		
 	<header>
-
 		<div class="header_site">
 			<div class="header_top_row">
 				<div class="row">
@@ -72,7 +83,7 @@
 						</div>
 						<div class="col">
 							<div class="inlines_blocks">
-								<div class="inline">
+								<div class="inline novisible_600">
 									<ul class="sign_list">
 										<li><a href="#">Вход</a></li>
 										<li><a href="#">Регистрация</a></li>
@@ -87,6 +98,13 @@
 									<div class="basket_link">
 										<a href="#"><img src="img/card.svg" alt="" /><span class="count_goods">4</span></a>
 									</div>
+								</div>
+								<div class="inline inline_resp">
+									<button class="respmenubtn">
+										<span></span>
+										<span></span>
+										<span></span>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -163,7 +181,7 @@
 												</div>
 											</a>
 										</li>
-										<li>
+										<li data-submenu-item = "sub_1">
 											<a href="#">
 												<div>
 													<img src="img/icon_07.svg" alt="" />
@@ -171,9 +189,10 @@
 												<div>
 													<span>Студии и кейсы</span>
 												</div>
+												<button type="button" class="down_btn"></button>
 											</a>
 										</li>
-										<li>
+										<li data-submenu-item = "sub_2">
 											<a href="#">
 												<div>
 													<img src="img/icon_08.svg" alt="" />
@@ -181,6 +200,7 @@
 												<div>
 													<span>Аксессуары</span>
 												</div>
+												<button type="button" class="down_btn"></button>
 											</a>
 										</li>
 										<li>
@@ -204,11 +224,25 @@
 											</a>
 										</li>
 									</ul>
-								</div>
+								</div>								
 							</div>
 						</div>
 						<div class="col">
 							<div class="main_nav_wrapp" id="resp_nav">
+								<div class="inline visible_600">
+									<ul class="sign_list">
+										<li><a href="#">Вход</a></li>
+										<li><a href="#">Регистрация</a></li>
+									</ul>
+								</div>
+								<div class="search_form_wrapp resp_search">
+									<form>
+										<div class="search_form">
+											<input type="text" name="search" class="search_input" placeholder="Поиск" />
+											<input type="submit" class="submit_btn" />
+										</div>
+									</form>
+								</div>
 								<ul class="main_nav">
 									<li><a href="#">Главная</a></li>
 									<li><a href="#">Каталог</a></li>
@@ -223,16 +257,9 @@
 						</div>
 					</div>
 				</div>
-				<button class="respmenubtn">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
 			</div>
 		</div>
-								
 	</header>
-
 	<!-- /Header -->
 
 	<!-- Content -->
