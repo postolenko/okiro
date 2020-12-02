@@ -47,6 +47,18 @@ function getMapPosition() {
     }
 }
 
+function getOrderBoxPosition() {
+    if(bodyWidth <= 1124) {
+        $(".order_box_append").each(function() {
+            $(".order_box").appendTo(".order_box_append");
+        });
+    } else {
+        $(".order_box_append").each(function() {
+            $(".order_box").appendTo("#orderBoxWrapp");
+        });
+    }
+}
+
 var w = window,
 d = document,
 e = d.documentElement,
@@ -83,6 +95,7 @@ $(window).resize(function() {
     }, 300);
     getCatalogHeight();
     getMapPosition();
+    getOrderBoxPosition();
 });
 
 $(document).scroll(function() {
@@ -96,6 +109,7 @@ $(document).ready(function() {
     setSubMenusPosition();
     getSlidesHeight();
     getMapPosition();
+    getOrderBoxPosition();
     
 
     $(".catalog_title").on("click", function(e) {

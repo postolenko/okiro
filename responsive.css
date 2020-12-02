@@ -346,6 +346,23 @@
 
 	/*-- /Section 1 - Sotrudnichestvo --*/
 
+	/*-- Section 1 - Basket --*/
+
+	.basket_templ > .left {
+	    width: 100%;
+	    padding: 20px 0;
+	}
+
+	.basket_templ > .right {
+		display: none;
+	}
+
+	.form_wrapp_2 {
+	    margin: 36px auto 10px auto;
+	}
+
+	/*-- /Section 1 - Basket --*/
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -834,6 +851,27 @@ h1 {
 
 /*-- /Section 1 - Politic --*/
 
+/*-- Section 1 - Basket --*/
+
+.good_thumb_2 div:nth-child(1) {
+    width: 105px;
+}
+
+.good_thumb_2 div:nth-child(2) {
+    width: calc(100% - 105px);
+    padding-left: 10px;
+}
+
+.price_2 {
+    font-size: 16px;
+}
+
+.count_2 {
+    font-size: 16px;
+}
+
+/*-- /Section 1 - Basket --*/
+
 /*-- Footer --*/
 
 .footer_cols {
@@ -1172,6 +1210,16 @@ h1 {
 
 /*-- /Section 1 - Remont --*/
 
+/*-- Section 1 - Basket --*/
+
+.catalog_list_wrapp {
+	-webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,.4);
+	-moz-box-shadow: 0 1px 4px 0 rgba(0,0,0,.4);
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,.4);
+}
+
+/*-- /Section 1 - Basket --*/
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -1427,6 +1475,79 @@ h1 {
 }
 
 /*-- /Section 1 - Politic --*/
+
+/*-- Section 1 - Basket --*/
+
+.basket_templ {
+    margin: 0 0 10px 0;
+}
+
+.basket_table .table_row {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+}
+
+.basket_table .table_row.table_header {
+	display: none;
+}
+
+.basket_table .resp_h3 {
+    display: block;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+}
+
+.basket_table .table_row .cell:nth-child(1) {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.basket_table .table_row .cell:nth-child(2) {
+    width: 33.33%;
+    text-align: left;
+}
+
+.basket_table .table_row .cell:nth-child(3) {
+    width: 33.33%;
+}
+
+.basket_table .table_row .cell:nth-child(4) {
+    width: 33.33%;
+    text-align: right;
+}
+
+.order_table p {
+    font-size: 16px;
+}
+
+.radio_wrapp_2 label {
+    font-size: 16px;
+}
+
+.order_table_2 p {
+    font-size: 16px;
+}
+
+.order_box_footer h3 {
+    font-size: 19px;
+    line-height: 22px;
+}
+
+.red_price {
+    font-size: 19px;
+    line-height: 22px;
+}
+
+.order_table_2 .table_row .cell:nth-child(1) {
+    padding-right: 10px;
+}
+
+/*-- /Section 1 - Basket --*/
 
 /*-- Footer --*/
 
@@ -1705,6 +1826,36 @@ h1 {
 
 	/*-- /Section 1 - Predoplata --*/
 
+	/*-- Section 1 - Basket --*/
+
+	.order_box_title h2 {
+	    font-size: 20px;
+	}
+
+	.order_table p {
+	    font-size: 14px;
+	}
+
+	.radio_wrapp_2 label {
+	    font-size: 14px;
+	}
+
+	.order_table_2 p {
+	    font-size: 14px;
+	}
+
+	.order_box_footer h3 {
+	    font-size: 15px;
+	    line-height: 20px;
+	}
+
+	.red_price {
+	    font-size: 15px;
+	    line-height: 20px;
+	}
+
+	/*-- /Section 1 - Basket --*/
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -1783,6 +1934,16 @@ h1 {
 	}
 
 	/*-- /Section 1 - Predoplata --*/
+
+	/*-- Section 1 - Basket --*/
+
+	.basket_table .resp_h3 {
+	    font-weight: 500;
+	    font-size: 14px;
+	    line-height: 18px;
+	}
+
+	/*-- /Section 1 - Basket --*/
 
 }
 
