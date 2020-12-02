@@ -327,6 +327,25 @@
 
 	/*-- /Section 1 - Card --*/
 
+	/*-- Section 1 - Sotrudnichestvo --*/
+
+	.thumb_1 {
+	    width: 25%;
+	    min-height: 280px;
+	    padding: 20px 15px;
+	}
+
+	.thumb_1 .icon_box {
+	    height: 127px;
+	}
+
+	.thumb_1 p {
+	    font-size: 21px;
+	    line-height: 26px;
+	}
+
+	/*-- /Section 1 - Sotrudnichestvo --*/
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -666,10 +685,71 @@ h1 {
 
 /*-- /Section 1 - News --*/
 
+/*-- News Single - Section 1 --*/
+
+.news_single_article .left {
+    width: 280px;
+}
+
+.news_single_article .right {
+    width: calc(100% - 280px);
+}
+
+.news_single_article h2 {
+    font-size: 29px;
+    line-height: 35px;
+}
+
+.news_single_article ol {
+    padding: 5px 0;
+}
+
+.news_single_article ol li {
+    text-indent: 17px;
+   	font-size: 16px;
+    line-height: 26px;
+}
+
+.news_single_article p {
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.news_single_article ol li:before {
+    top: 13px;
+}
+
+.news_single_article ul li {
+    padding: 2px 0 4px 0;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.inportant_info p {
+    padding: 0;
+}
+
+/*-- /News Single - Section 1 --*/
+
+/*-- Section 1 - Remont --*/
+
+.article p {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+/*-- /Section 1 - Remont --*/
+
 }
 
 
 @media only screen and (max-width: 900px) {
+
+h1 {
+    font-size: 32px;
+    line-height: 40px;
+}
 
 /*-- Section 1 - Catalog --*/
 
@@ -693,6 +773,66 @@ h1 {
 }
 
 /*-- /Section 1 - Catalog --*/
+
+/*-- Section 1 - Delivery --*/
+
+.h1_descript p {
+    font-size: 21px;
+    line-height: 27px;
+}
+
+.article_2 p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/*-- /Section 1 - Delivery --*/
+
+/*-- Section 1 - Sotrudnichestvo --*/
+
+.h1_wrapp p {
+    padding: 10px 0;
+    font-size: 19px;
+    line-height: 26px;
+}
+
+.h1_wrapp p a {
+    font-size: 19px;
+    line-height: 26px;
+}
+
+.thumb_1 {
+    min-height: 215px;
+}
+
+.thumb_1 .icon_box {
+    height: 80px;
+}
+
+.thumb_1 p {
+    font-size: 16px;
+    line-height: 23px;
+}
+
+/*-- /Section 1 - Sotrudnichestvo --*/
+
+/*-- Section 1 - Politic --*/
+
+.politic_article h3 {
+    font-size: 25px;
+}
+
+.politic_article p {
+    font-size: 17px;
+    line-height: 23px;
+}
+
+.politic_article ul li {
+    font-size: 17px;
+    line-height: 23px;
+}
+
+/*-- /Section 1 - Politic --*/
 
 /*-- Footer --*/
 
@@ -938,6 +1078,100 @@ h1 {
 
 /*-- /Section 1 - Card --*/
 
+/*-- News Single - Section 1 --*/
+
+.news_single_article h2 {
+    font-size: 26px;
+    line-height: 33px;
+}
+
+.news_single_article .left {
+    width: 165px;
+}
+
+.news_single_article .right {
+    width: calc(100% - 165px);
+}
+
+/*-- /News Single - Section 1 --*/
+
+/*-- News Single - Section 2 --*/
+
+.message_item {
+	padding: 21px 10px 14px 10px;
+}
+
+.message_item_content p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.message_item > .col:nth-child(1) {
+    width: 85px;
+}
+
+.message_item > .col:nth-child(2) {
+    width: calc(100% - 85px);
+    padding-left: 20px;
+}
+
+/*-- /News Single - Section 2 --*/
+
+/*-- Section 1 - Sotrudnichestvo --*/
+
+.thumbnails_1_wrapp h2 {
+    padding: 15px 0;
+}
+
+.thumbnails_1 {
+    margin: 10px 0;
+}
+
+.thumbnails_1_footer p {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.thumbnails_1_footer p a {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+/*-- /Section 1 - Sotrudnichestvo --*/
+
+/*-- Section 1 - Remont --*/
+
+.article {
+	display: block;
+	padding-bottom: 30px;
+}
+
+.article:last-child {
+	padding-bottom: 0;
+}
+
+.article .left {
+	width: 100%;
+	margin: 0;
+	padding: 0 !important;
+    order: 2;
+}
+
+.article .right {
+	width: 100%;
+	max-width: 600px;
+	margin: 20px auto;
+	padding: 0 !important;
+    order: 1;
+}
+
+.article .right .img_box {
+	position: relative;
+	height: 250px;
+}
+
+/*-- /Section 1 - Remont --*/
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -993,6 +1227,99 @@ h1 {
 	}
 
 	/*-- /Section 1 - News --*/
+
+	/*-- News Single - Section 1 --*/
+
+	.news_single_article .left {
+	    display: none;
+	}
+
+	.news_single_article .right {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.news_single_article h2 {
+	    font-size: 23px;
+	    line-height: 29px;
+	}
+
+	.news_single_article h3 {
+	    font-size: 16px;
+	    line-height: 28px;
+	}
+
+	.news_single_article ul {
+	    padding: 10px 0;
+	}
+
+	/*-- /News Single - Section 1 --*/
+
+	/*-- News Single - Section 3 --*/
+
+	.form_sect {
+	    margin: 32px 0 40px 0;
+	    padding: 15px 20px 25px 20px;
+	}
+
+	.input_tree_cols {
+	    margin: 6px 0 0 0;
+	}
+
+	.input_tree_cols .input_wrapp_2 {
+	    width: 100%;
+	    margin: 5px 0;
+	}
+
+	.form_footer {
+		display: block;
+	}
+
+	.form_footer .col:nth-child(1) {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.form_footer .col:nth-child(2) {
+	    justify-content: flex-start;
+	    -webkit-justify-content: flex-start;
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	/*-- /News Single - Section 3 --*/
+
+	/*-- Section 1 - Delivery --*/
+
+	.h1_descript p {
+	    font-size: 18px;
+	    line-height: 25px;
+	}
+
+	/*-- /Section 1 - Delivery --*/
+
+	/*-- Section 1 - Sotrudnichestvo --*/
+
+	.thumb_1 {
+	    width: 50%;
+	    min-height: 175px;
+	}
+
+	/*-- /Section 1 - Sotrudnichestvo --*/
+
+	/*-- Section 1 - Predoplata --*/
+
+	.form_wrapp {
+	    padding: 20px 20px 10px 20px;
+	}
+
+	.input_two_cols .input_wrapp:nth-child(odd),
+	.input_two_cols .input_wrapp:nth-child(even) {
+	    width: 100%;
+	    margin: 4px 0;
+	}
+
+	/*-- /Section 1 - Predoplata --*/
 
 }
 
@@ -1075,6 +1402,32 @@ h1 {
 
 /*-- /Section 1 - Card --*/
 
+/*-- Section 1 - Delivery --*/
+
+.article_2 .left {
+    width: 100%;
+    padding-right: 0;
+}
+
+.article_2 .maps_box {
+	display: none;
+}
+
+.map_box_resp {
+    display: block;
+    padding-bottom: 30px;
+}
+
+/*-- /Section 1 - Delivery --*/
+
+/*-- Section 1 - Politic --*/
+
+.politic_article h3 {
+    font-size: 21px;
+}
+
+/*-- /Section 1 - Politic --*/
+
 /*-- Footer --*/
 
 .footer_cols .col:nth-child(1) {
@@ -1103,8 +1456,8 @@ h1 {
 @media only screen and (max-width: 480px) {
 
 	h1 {
-	    font-size: 29px;
-	    line-height: 40px;
+	    font-size: 21px;
+	    line-height: 34px;
 	}
 
 	.wrapper {
@@ -1283,6 +1636,75 @@ h1 {
 
 	/*-- /Section 1 - News --*/
 
+	/*-- News Single - Section 2 --*/
+
+	.message_item {
+		display: block;
+		padding: 15px 10px 10px 10px;
+	}
+
+	.message_item > .col:nth-child(1) {
+	    width: 85px;
+	    margin: 5px auto;
+	}
+
+	.message_item > .col:nth-child(2) {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.message_item > .col:nth-child(2):before {
+		display: none;
+	}
+
+	/*-- /News Single - Section 2 --*/
+
+	/*-- News Single - Section 3 --*/
+
+	.form_sect {
+	    margin: 20px -15px;
+	}
+
+	.form_sect_title h3 {
+	    font-size: 21px;
+	    line-height: 29px;
+	}
+
+	/*-- /News Single - Section 3 --*/
+
+	/*-- Section 1 - Sotrudnichestvo --*/
+
+	.h1_wrapp p {
+	    font-size: 16px;
+	    line-height: 20px;
+	}
+
+	.h1_wrapp p a {
+	    font-size: 16px;
+	    line-height: 20px;
+	}
+
+	/*-- /Section 1 - Sotrudnichestvo --*/
+
+	/*-- Section 1 - Remont --*/
+
+	.article h3 {
+	    font-size: 22px;
+	    line-height: 30px;
+	}
+
+	/*-- /Section 1 - Remont --*/
+
+	/*-- Section 1 - Predoplata --*/
+
+	.items_list li {
+	    padding-left: 30px;
+	    font-size: 16px;
+	    line-height: 21px;
+	}
+
+	/*-- /Section 1 - Predoplata --*/
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -1339,6 +1761,28 @@ h1 {
 	}
 
 	/*-- /Section 1 - News --*/
+
+	/*-- Section 1 - Sotrudnichestvo --*/
+
+	.thumbnails_1_wrapp h2 {
+	    font-size: 21px;
+	    line-height: 30px;
+	}
+
+	.thumb_1 {
+	    width: 100%;
+	    min-height: auto;
+	}
+
+	/*-- /Section 1 - Sotrudnichestvo --*/
+
+	/*-- Section 1 - Predoplata --*/
+
+	.form_footer .col:nth-child(2) .red_pill {
+		width: 100%;
+	}
+
+	/*-- /Section 1 - Predoplata --*/
 
 }
 

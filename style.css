@@ -2029,10 +2029,6 @@ textarea:focus {
     text-align: center;
 }
 
-.h1_wrapp h1 {
-
-}
-
 .articles_wrapp {
     margin-bottom: 75px;
 }
@@ -2046,6 +2042,7 @@ textarea:focus {
 .article .left {
     width: 50%;
     padding-right: 10px;
+    order: 1;
 }
 
 .article .right {
@@ -2053,6 +2050,7 @@ textarea:focus {
     display: flex;
     display: -webkit-flex;
     padding: 6px 0 6px 10px;
+    order: 2;
 }
 
 .article:nth-child(even) .left {
@@ -2137,10 +2135,6 @@ textarea:focus {
 
 /*-- Section 1 - Sotrudnichestvo --*/
 
-.h1_wrapp {
-
-}
-
 .h1_wrapp p {
     padding: 15px 0;
     font-weight: 500;
@@ -2156,6 +2150,40 @@ textarea:focus {
     line-height: 30px;
     text-align: center;
     color: #BD1515;
+    border-bottom: 1px solid transparent;
+    -webkit-transition-property: border;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.h1_wrapp p a:link,
+.h1_wrapp p a:visited {
+    border-bottom: 1px solid transparent;
+}
+
+.h1_wrapp p a:active,
+.h1_wrapp p a.active {
+    border-bottom: 1px solid #BD1515;
+}
+
+.h1_wrapp p a:hover {
+    border-bottom: 1px solid #BD1515;
 }
 
 .thumbnails_1_wrapp {
@@ -2232,6 +2260,40 @@ textarea:focus {
     font-size: 24px;
     line-height: 30px;
     color: #BD1515;
+    border-bottom: 1px solid transparent;
+    -webkit-transition-property: border;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.thumbnails_1_footer p a:link,
+.thumbnails_1_footer p a:visited {
+    border-bottom: 1px solid transparent;
+}
+
+.thumbnails_1_footer p a:active,
+.thumbnails_1_footer p a.active {
+    border-bottom: 1px solid #BD1515;
+}
+
+.thumbnails_1_footer p a:hover {
+    border-bottom: 1px solid #BD1515;
 }
 
 /*-- /Section 1 - Sotrudnichestvo --*/
@@ -2352,7 +2414,7 @@ textarea:focus {
 }
 
 .news_thumb_title a:link,
-.news_thumb_title a.visited {
+.news_thumb_title a:visited {
     color: #000000;
 }
 
@@ -2594,6 +2656,10 @@ textarea:focus {
 
 .article_2 .map_box:last-child {
     margin-bottom: 0;
+}
+
+.map_box.map_box_resp {
+    display: none;
 }
 
 /*-- /Section 1 - Delivery --*/
@@ -2891,7 +2957,7 @@ textarea:focus {
     padding: 5px 0 6px 0;
     font-weight: normal;
     font-size: 18px;
-    line-height: 30px
+    line-height: 30px;
     color: #090708;
 }
 
