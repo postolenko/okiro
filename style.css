@@ -4582,7 +4582,7 @@ textarea:focus {
     position: relative;
 }
 
-.contact_thumb .inner div {
+.contact_thumb .inner > div {
     width: 100%;
 }
 
@@ -4602,13 +4602,10 @@ textarea:focus {
     -webkit-transform: translate(-50%, -50%);
 }
 
-.table_3 {
-    
-}
-
 .table_3 .table_row {
     display: flex;
     display: -webkit-flex;
+    width: 100%;
     padding: 5px 0;
 }
 
@@ -4617,7 +4614,7 @@ textarea:focus {
 }
 
 .table_3 .table_row .cell:nth-child(2) {
-    width: calc(100% -160px);
+    width: calc(100% - 160px);
 }
 
 .table_3 .table_row .cell:nth-child(1) p {

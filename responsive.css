@@ -255,6 +255,20 @@
 
 	/*-- /Section 4 - Main Page --*/
 
+	/*-- Section 2 - Contacts --*/
+
+	.contact_thumbs_2_wrapp {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.contact_thumbs_2 {
+	    width: calc(50% - 20px);
+	    margin: 10px;
+	}
+
+	/*-- /Section 2 - Contacts --*/
+
 }
 
 @media only screen and (max-width: 1124px) {
@@ -362,6 +376,31 @@
 	}
 
 	/*-- /Section 1 - Basket --*/
+
+	/*-- Section 1 - Contacts --*/
+
+	.table_3 .table_row .cell:nth-child(2) p,
+	.table_3 .table_row .cell:nth-child(2) p a {
+	    font-size: 18px;
+	    line-height: 25px;
+	}
+
+	.table_3 .table_row .cell:nth-child(1) p {
+		font-size: 18px;
+	    line-height: 25px;
+	}
+
+	.contact_thumb h3 {
+	    font-size: 20px;
+	    line-height: 27px;
+	}
+
+	.contact_thumb p {
+		font-size: 18px;
+	    line-height: 25px;
+	}
+
+	/*-- /Section 1 - Contacts --*/
 
 }
 
@@ -872,6 +911,23 @@ h1 {
 
 /*-- /Section 1 - Basket --*/
 
+/*-- Section 1 - Contacts --*/
+
+.contact_thumb.grey_thumb > div:nth-child(1) {
+	width: 100%;
+	margin: 10px 0;
+}
+
+.contact_thumb.grey_thumb > div:nth-child(2) {
+	display: none;
+}
+
+.contact_thumb > div {
+    padding: 20px 20px 20px 20px;
+}
+
+/*-- /Section 1 - Contacts --*/
+
 /*-- Footer --*/
 
 .footer_cols {
@@ -923,6 +979,11 @@ h1 {
 h1 {
     font-size: 36px;
     line-height: 46px;
+}
+
+h2 {
+    font-size: 35px;
+    line-height: 38px;
 }
 
 /*-- Header --*/
@@ -1224,6 +1285,11 @@ h1 {
 
 @media only screen and (max-width: 700px) {
 
+	h2 {
+	    font-size: 30px;
+	    line-height: 32px;
+	}
+
 	/*-- Section 4 - Main Page --*/
 
 	.grid_thumbs {
@@ -1379,6 +1445,11 @@ h1 {
 
 .visible_600 {
     display: block !important;
+}
+
+h2 {
+    font-size: 26px;
+    line-height: 32px;
 }
 
 /*-- Header --*/
@@ -1548,6 +1619,62 @@ h1 {
 }
 
 /*-- /Section 1 - Basket --*/
+
+/*-- Section 1 - Contacts --*/
+
+.contact_thumb {
+	display: block;
+	min-height: auto;
+}
+
+.contact_thumb > div:nth-child(1) {
+	width: 100%;
+	margin: 10px 0;
+}
+
+.contact_thumb > div:nth-child(2) {
+	width: 100%;
+	margin: 0;
+}
+
+.contact_thumb > div {
+    padding: 10px 15px;
+}
+
+.map_thumb {
+	position: relative;
+	height: 200px;
+}
+
+/*-- /Section 1 - Contacts --*/
+
+/*-- Section 2 - Contacts --*/
+
+.contact_thumbs_2_wrapp {
+    margin: 28px 0;
+}
+
+.contact_thumbs_2 {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.contact_thumbs_2 p {
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.thumb_table .table_row .cell:nth-child(2) p {
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.thumb_table .table_row .cell:nth-child(2) p a {
+    font-size: 13px;
+    line-height: 21px;
+}
+
+/*-- /Section 2 - Contacts --*/
 
 /*-- Footer --*/
 
@@ -1855,6 +1982,18 @@ h1 {
 	}
 
 	/*-- /Section 1 - Basket --*/
+
+	/*-- Section 1 - Contacts --*/
+
+	.table_3 .table_row {
+		display: block;
+	}
+
+	.table_3 .table_row .cell:nth-child(1) {
+	    width: 100%;
+	}
+
+	/*-- /Section 1 - Contacts --*/
 
 }
 
