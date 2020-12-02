@@ -14,12 +14,23 @@
 
 <body>
 
+	<div class="inners_menus">
+		<ul class="sub_menu" data-submenu = "sub_1">
+			<li><a href="#">Бьюти кейс для визажиста</a></li>
+			<li><a href="#">Мобильная студия для визажиста</a></li>
+			<li><a href="#">Чемодан-сумка для визажиста</a></li>
+		</ul>
+		<ul class="sub_menu" data-submenu = "sub_2">
+			<li><a href="#">Бьюти кейс для визажиста 2</a></li>
+			<li><a href="#">Мобильная студия для визажиста 2</a></li>
+			<li><a href="#">Чемодан-сумка для визажиста 2</a></li>
+		</ul>
+	</div>
+
 	<div class="wrapper">
 
-	<!-- Header -->
-		
+	<!-- Header -->		
 	<header>
-
 		<div class="header_site">
 			<div class="header_top_row">
 				<div class="row">
@@ -72,7 +83,7 @@
 						</div>
 						<div class="col">
 							<div class="inlines_blocks">
-								<div class="inline">
+								<div class="inline novisible_600">
 									<ul class="sign_list">
 										<li><a href="#">Вход</a></li>
 										<li><a href="#">Регистрация</a></li>
@@ -87,6 +98,13 @@
 									<div class="basket_link">
 										<a href="#"><img src="img/card.svg" alt="" /><span class="count_goods">4</span></a>
 									</div>
+								</div>
+								<div class="inline inline_resp">
+									<button class="respmenubtn">
+										<span></span>
+										<span></span>
+										<span></span>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -163,7 +181,7 @@
 												</div>
 											</a>
 										</li>
-										<li>
+										<li data-submenu-item = "sub_1">
 											<a href="#">
 												<div>
 													<img src="img/icon_07.svg" alt="" />
@@ -171,9 +189,10 @@
 												<div>
 													<span>Студии и кейсы</span>
 												</div>
+												<button type="button" class="down_btn"></button>
 											</a>
 										</li>
-										<li>
+										<li data-submenu-item = "sub_2">
 											<a href="#">
 												<div>
 													<img src="img/icon_08.svg" alt="" />
@@ -181,6 +200,7 @@
 												<div>
 													<span>Аксессуары</span>
 												</div>
+												<button type="button" class="down_btn"></button>
 											</a>
 										</li>
 										<li>
@@ -204,11 +224,25 @@
 											</a>
 										</li>
 									</ul>
-								</div>
+								</div>								
 							</div>
 						</div>
 						<div class="col">
 							<div class="main_nav_wrapp" id="resp_nav">
+								<div class="inline visible_600">
+									<ul class="sign_list">
+										<li><a href="#">Вход</a></li>
+										<li><a href="#">Регистрация</a></li>
+									</ul>
+								</div>
+								<div class="search_form_wrapp resp_search">
+									<form>
+										<div class="search_form">
+											<input type="text" name="search" class="search_input" placeholder="Поиск" />
+											<input type="submit" class="submit_btn" />
+										</div>
+									</form>
+								</div>
 								<ul class="main_nav">
 									<li><a href="#">Главная</a></li>
 									<li><a href="#">Каталог</a></li>
@@ -223,16 +257,9 @@
 						</div>
 					</div>
 				</div>
-				<button class="respmenubtn">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
 			</div>
 		</div>
-								
 	</header>
-
 	<!-- /Header -->
 
 	<!-- Content -->
@@ -291,7 +318,7 @@
 					</div>
 					<div class="right">
 						<div class="cardt_templ_inner">
-							<ul class="breadcrumbs">
+							<ul class="breadcrumbs novisible_1124">
 								<li><a href="#">Главная</a></li>
 								<li><a href="#">Каталог</a></li>
 								<li><a href="#">Кольцевые лампы</a></li>
@@ -499,410 +526,412 @@
 					<div class="templ_wrapp_title">
 						<h3>Похожие товары</h3>
 					</div>
-					<div class="goods_cards_2">
-						<div class="slide">
-							<div class="good_card">
-								<div class="inner_wrapp">
-									<div class="img_box">
-										<img src="img/image_07.jpg" alt="" />
-									</div>
-									<div class="thumb_content">
-										<div class="thumb_title">
-											<h3>Кольцевая лампа</h3>
-											<h3>OKIRA LED RING DAR</h3>
-											<h3>120</h3>
+					<div class="goods_cards_2_wrapp">
+						<div class="goods_cards_2">
+							<div class="slide">
+								<div class="good_card">
+									<div class="inner_wrapp">
+										<div class="img_box">
+											<img src="img/image_07.jpg" alt="" />
 										</div>
-										<div class="price_box">
-											<p>2000 RUB</p>
-										</div>
-										<div class="thumb_hover_box">
-											<div class="thumb_descript">
-												<p>Кольцевая лампа OKIRA LED RING DAR 120 26 сантиметров имеет небольшой вес и создана специально для перевозок из одного места в другое.</p>
+										<div class="thumb_content">
+											<div class="thumb_title">
+												<h3>Кольцевая лампа</h3>
+												<h3>OKIRA LED RING DAR</h3>
+												<h3>120</h3>
 											</div>
-											<div class="thumb_footer">
-												<div class="col">
-													<a href="#" class="icon_link">
-														<img src="img/hearth_2.svg" alt="" />
-													</a>
+											<div class="price_box">
+												<p>2000 RUB</p>
+											</div>
+											<div class="thumb_hover_box">
+												<div class="thumb_descript">
+													<p>Кольцевая лампа OKIRA LED RING DAR 120 26 сантиметров имеет небольшой вес и создана специально для перевозок из одного места в другое.</p>
 												</div>
-												<div class="col">
-													<div class="btn_wrapp_2">
-														<a href="#" class="red_pill_2"><img src="img/shopping_cart.svg" alt="" /></a>
+												<div class="thumb_footer">
+													<div class="col">
+														<a href="#" class="icon_link">
+															<img src="img/hearth_2.svg" alt="" />
+														</a>
 													</div>
-												</div>
-												<div class="col">
-													<a href="#" class="icon_link">
-														<img src="img/question.svg" alt="" />
-													</a>
+													<div class="col">
+														<div class="btn_wrapp_2">
+															<a href="#" class="red_pill_2"><img src="img/shopping_cart.svg" alt="" /></a>
+														</div>
+													</div>
+													<div class="col">
+														<a href="#" class="icon_link">
+															<img src="img/question.svg" alt="" />
+														</a>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="slide">
-							<div class="good_card">
-								<div class="inner_wrapp">
-									<div class="img_box">
-										<img src="img/image_07.jpg" alt="" />
-									</div>
-									<div class="thumb_content">
-										<div class="thumb_title">
-											<h3>Кольцевая лампа</h3>
-											<h3>OKIRA LED RING DAR</h3>
-											<h3>120</h3>
+							<div class="slide">
+								<div class="good_card">
+									<div class="inner_wrapp">
+										<div class="img_box">
+											<img src="img/image_07.jpg" alt="" />
 										</div>
-										<div class="price_box">
-											<p>2000 RUB</p>
-										</div>
-										<div class="thumb_hover_box">
-											<div class="thumb_descript">
-												<p>Кольцевая лампа OKIRA LED RING DAR 120 26 сантиметров имеет небольшой вес и создана специально для перевозок из одного места в другое.</p>
+										<div class="thumb_content">
+											<div class="thumb_title">
+												<h3>Кольцевая лампа</h3>
+												<h3>OKIRA LED RING DAR</h3>
+												<h3>120</h3>
 											</div>
-											<div class="thumb_footer">
-												<div class="col">
-													<a href="#" class="icon_link">
-														<img src="img/hearth_2.svg" alt="" />
-													</a>
+											<div class="price_box">
+												<p>2000 RUB</p>
+											</div>
+											<div class="thumb_hover_box">
+												<div class="thumb_descript">
+													<p>Кольцевая лампа OKIRA LED RING DAR 120 26 сантиметров имеет небольшой вес и создана специально для перевозок из одного места в другое.</p>
 												</div>
-												<div class="col">
-													<div class="btn_wrapp_2">
-														<a href="#" class="dark_pill">Купить</a>
+												<div class="thumb_footer">
+													<div class="col">
+														<a href="#" class="icon_link">
+															<img src="img/hearth_2.svg" alt="" />
+														</a>
 													</div>
-												</div>
-												<div class="col">
-													<a href="#" class="icon_link">
-														<img src="img/question.svg" alt="" />
-													</a>
+													<div class="col">
+														<div class="btn_wrapp_2">
+															<a href="#" class="dark_pill">Купить</a>
+														</div>
+													</div>
+													<div class="col">
+														<a href="#" class="icon_link">
+															<img src="img/question.svg" alt="" />
+														</a>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="slide">
-							<div class="good_card">
-								<div class="inner_wrapp">
-									<div class="img_box">
-										<img src="img/image_07.jpg" alt="" />
-									</div>
-									<div class="thumb_content">
-										<div class="thumb_title">
-											<h3>Кольцевая лампа</h3>
-											<h3>OKIRA LED RING DAR</h3>
-											<h3>120</h3>
+							<div class="slide">
+								<div class="good_card">
+									<div class="inner_wrapp">
+										<div class="img_box">
+											<img src="img/image_07.jpg" alt="" />
 										</div>
-										<div class="price_box">
-											<p>2000 RUB</p>
-										</div>
-										<div class="thumb_hover_box">
-											<div class="thumb_descript">
-												<p>Кольцевая лампа OKIRA LED RING DAR 120 26 сантиметров имеет небольшой вес и создана специально для перевозок из одного места в другое.</p>
+										<div class="thumb_content">
+											<div class="thumb_title">
+												<h3>Кольцевая лампа</h3>
+												<h3>OKIRA LED RING DAR</h3>
+												<h3>120</h3>
 											</div>
-											<div class="thumb_footer">
-												<div class="col">
-													<a href="#" class="icon_link">
-														<img src="img/hearth_2.svg" alt="" />
-													</a>
+											<div class="price_box">
+												<p>2000 RUB</p>
+											</div>
+											<div class="thumb_hover_box">
+												<div class="thumb_descript">
+													<p>Кольцевая лампа OKIRA LED RING DAR 120 26 сантиметров имеет небольшой вес и создана специально для перевозок из одного места в другое.</p>
 												</div>
-												<div class="col">
-													<div class="btn_wrapp_2">
-														<a href="#" class="red_pill_2"><img src="img/shopping_cart.svg" alt="" /></a>
+												<div class="thumb_footer">
+													<div class="col">
+														<a href="#" class="icon_link">
+															<img src="img/hearth_2.svg" alt="" />
+														</a>
 													</div>
-												</div>
-												<div class="col">
-													<a href="#" class="icon_link">
-														<img src="img/question.svg" alt="" />
-													</a>
+													<div class="col">
+														<div class="btn_wrapp_2">
+															<a href="#" class="red_pill_2"><img src="img/shopping_cart.svg" alt="" /></a>
+														</div>
+													</div>
+													<div class="col">
+														<a href="#" class="icon_link">
+															<img src="img/question.svg" alt="" />
+														</a>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="slide">
-							<div class="good_card">
-								<div class="inner_wrapp">
-									<div class="img_box">
-										<img src="img/image_07.jpg" alt="" />
-									</div>
-									<div class="thumb_content">
-										<div class="thumb_title">
-											<h3>Кольцевая лампа</h3>
-											<h3>OKIRA LED RING DAR</h3>
-											<h3>120</h3>
+							<div class="slide">
+								<div class="good_card">
+									<div class="inner_wrapp">
+										<div class="img_box">
+											<img src="img/image_07.jpg" alt="" />
 										</div>
-										<div class="price_box">
-											<p>2000 RUB</p>
-										</div>
-										<div class="thumb_hover_box">
-											<div class="thumb_descript">
-												<p>Кольцевая лампа OKIRA LED RING DAR 120 26 сантиметров имеет небольшой вес и создана специально для перевозок из одного места в другое.</p>
+										<div class="thumb_content">
+											<div class="thumb_title">
+												<h3>Кольцевая лампа</h3>
+												<h3>OKIRA LED RING DAR</h3>
+												<h3>120</h3>
 											</div>
-											<div class="thumb_footer">
-												<div class="col">
-													<a href="#" class="icon_link">
-														<img src="img/hearth_2.svg" alt="" />
-													</a>
+											<div class="price_box">
+												<p>2000 RUB</p>
+											</div>
+											<div class="thumb_hover_box">
+												<div class="thumb_descript">
+													<p>Кольцевая лампа OKIRA LED RING DAR 120 26 сантиметров имеет небольшой вес и создана специально для перевозок из одного места в другое.</p>
 												</div>
-												<div class="col">
-													<div class="btn_wrapp_2">
-														<a href="#" class="dark_pill">Купить</a>
+												<div class="thumb_footer">
+													<div class="col">
+														<a href="#" class="icon_link">
+															<img src="img/hearth_2.svg" alt="" />
+														</a>
 													</div>
-												</div>
-												<div class="col">
-													<a href="#" class="icon_link">
-														<img src="img/question.svg" alt="" />
-													</a>
+													<div class="col">
+														<div class="btn_wrapp_2">
+															<a href="#" class="dark_pill">Купить</a>
+														</div>
+													</div>
+													<div class="col">
+														<a href="#" class="icon_link">
+															<img src="img/question.svg" alt="" />
+														</a>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="slide">
-							<div class="good_card">
-								<div class="inner_wrapp">
-									<div class="img_box">
-										<img src="img/image_07.jpg" alt="" />
-									</div>
-									<div class="thumb_content">
-										<div class="thumb_title">
-											<h3>Кольцевая лампа</h3>
-											<h3>OKIRA LED RING DAR</h3>
-											<h3>120</h3>
+							<div class="slide">
+								<div class="good_card">
+									<div class="inner_wrapp">
+										<div class="img_box">
+											<img src="img/image_07.jpg" alt="" />
 										</div>
-										<div class="price_box">
-											<p>2000 RUB</p>
-										</div>
-										<div class="thumb_hover_box">
-											<div class="thumb_descript">
-												<p>Кольцевая лампа OKIRA LED RING DAR 120 26 сантиметров имеет небольшой вес и создана специально для перевозок из одного места в другое.</p>
+										<div class="thumb_content">
+											<div class="thumb_title">
+												<h3>Кольцевая лампа</h3>
+												<h3>OKIRA LED RING DAR</h3>
+												<h3>120</h3>
 											</div>
-											<div class="thumb_footer">
-												<div class="col">
-													<a href="#" class="icon_link">
-														<img src="img/hearth_2.svg" alt="" />
-													</a>
+											<div class="price_box">
+												<p>2000 RUB</p>
+											</div>
+											<div class="thumb_hover_box">
+												<div class="thumb_descript">
+													<p>Кольцевая лампа OKIRA LED RING DAR 120 26 сантиметров имеет небольшой вес и создана специально для перевозок из одного места в другое.</p>
 												</div>
-												<div class="col">
-													<div class="btn_wrapp_2">
-														<a href="#" class="red_pill_2"><img src="img/shopping_cart.svg" alt="" /></a>
+												<div class="thumb_footer">
+													<div class="col">
+														<a href="#" class="icon_link">
+															<img src="img/hearth_2.svg" alt="" />
+														</a>
 													</div>
-												</div>
-												<div class="col">
-													<a href="#" class="icon_link">
-														<img src="img/question.svg" alt="" />
-													</a>
+													<div class="col">
+														<div class="btn_wrapp_2">
+															<a href="#" class="red_pill_2"><img src="img/shopping_cart.svg" alt="" /></a>
+														</div>
+													</div>
+													<div class="col">
+														<a href="#" class="icon_link">
+															<img src="img/question.svg" alt="" />
+														</a>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="slide">
-							<div class="good_card">
-								<div class="inner_wrapp">
-									<div class="img_box">
-										<img src="img/image_07.jpg" alt="" />
-									</div>
-									<div class="thumb_content">
-										<div class="thumb_title">
-											<h3>Кольцевая лампа</h3>
-											<h3>OKIRA LED RING DAR</h3>
-											<h3>120</h3>
+							<div class="slide">
+								<div class="good_card">
+									<div class="inner_wrapp">
+										<div class="img_box">
+											<img src="img/image_07.jpg" alt="" />
 										</div>
-										<div class="price_box">
-											<p>2000 RUB</p>
-										</div>
-										<div class="thumb_hover_box">
-											<div class="thumb_descript">
-												<p>Кольцевая лампа OKIRA LED RING DAR 120 26 сантиметров имеет небольшой вес и создана специально для перевозок из одного места в другое.</p>
+										<div class="thumb_content">
+											<div class="thumb_title">
+												<h3>Кольцевая лампа</h3>
+												<h3>OKIRA LED RING DAR</h3>
+												<h3>120</h3>
 											</div>
-											<div class="thumb_footer">
-												<div class="col">
-													<a href="#" class="icon_link">
-														<img src="img/hearth_2.svg" alt="" />
-													</a>
+											<div class="price_box">
+												<p>2000 RUB</p>
+											</div>
+											<div class="thumb_hover_box">
+												<div class="thumb_descript">
+													<p>Кольцевая лампа OKIRA LED RING DAR 120 26 сантиметров имеет небольшой вес и создана специально для перевозок из одного места в другое.</p>
 												</div>
-												<div class="col">
-													<div class="btn_wrapp_2">
-														<a href="#" class="red_pill_2"><img src="img/shopping_cart.svg" alt="" /></a>
+												<div class="thumb_footer">
+													<div class="col">
+														<a href="#" class="icon_link">
+															<img src="img/hearth_2.svg" alt="" />
+														</a>
 													</div>
-												</div>
-												<div class="col">
-													<a href="#" class="icon_link">
-														<img src="img/question.svg" alt="" />
-													</a>
+													<div class="col">
+														<div class="btn_wrapp_2">
+															<a href="#" class="red_pill_2"><img src="img/shopping_cart.svg" alt="" /></a>
+														</div>
+													</div>
+													<div class="col">
+														<a href="#" class="icon_link">
+															<img src="img/question.svg" alt="" />
+														</a>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="slide">
-							<div class="good_card">
-								<div class="inner_wrapp">
-									<div class="img_box">
-										<img src="img/image_07.jpg" alt="" />
-									</div>
-									<div class="thumb_content">
-										<div class="thumb_title">
-											<h3>Кольцевая лампа</h3>
-											<h3>OKIRA LED RING DAR</h3>
-											<h3>120</h3>
+							<div class="slide">
+								<div class="good_card">
+									<div class="inner_wrapp">
+										<div class="img_box">
+											<img src="img/image_07.jpg" alt="" />
 										</div>
-										<div class="price_box">
-											<p>2000 RUB</p>
-										</div>
-										<div class="thumb_hover_box">
-											<div class="thumb_descript">
-												<p>Кольцевая лампа OKIRA LED RING DAR 120 26 сантиметров имеет небольшой вес и создана специально для перевозок из одного места в другое.</p>
+										<div class="thumb_content">
+											<div class="thumb_title">
+												<h3>Кольцевая лампа</h3>
+												<h3>OKIRA LED RING DAR</h3>
+												<h3>120</h3>
 											</div>
-											<div class="thumb_footer">
-												<div class="col">
-													<a href="#" class="icon_link">
-														<img src="img/hearth_2.svg" alt="" />
-													</a>
+											<div class="price_box">
+												<p>2000 RUB</p>
+											</div>
+											<div class="thumb_hover_box">
+												<div class="thumb_descript">
+													<p>Кольцевая лампа OKIRA LED RING DAR 120 26 сантиметров имеет небольшой вес и создана специально для перевозок из одного места в другое.</p>
 												</div>
-												<div class="col">
-													<div class="btn_wrapp_2">
-														<a href="#" class="dark_pill">Купить</a>
+												<div class="thumb_footer">
+													<div class="col">
+														<a href="#" class="icon_link">
+															<img src="img/hearth_2.svg" alt="" />
+														</a>
 													</div>
-												</div>
-												<div class="col">
-													<a href="#" class="icon_link">
-														<img src="img/question.svg" alt="" />
-													</a>
+													<div class="col">
+														<div class="btn_wrapp_2">
+															<a href="#" class="dark_pill">Купить</a>
+														</div>
+													</div>
+													<div class="col">
+														<a href="#" class="icon_link">
+															<img src="img/question.svg" alt="" />
+														</a>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="slide">
-							<div class="good_card">
-								<div class="inner_wrapp">
-									<div class="img_box">
-										<img src="img/image_07.jpg" alt="" />
-									</div>
-									<div class="thumb_content">
-										<div class="thumb_title">
-											<h3>Кольцевая лампа</h3>
-											<h3>OKIRA LED RING DAR</h3>
-											<h3>120</h3>
+							<div class="slide">
+								<div class="good_card">
+									<div class="inner_wrapp">
+										<div class="img_box">
+											<img src="img/image_07.jpg" alt="" />
 										</div>
-										<div class="price_box">
-											<p>2000 RUB</p>
-										</div>
-										<div class="thumb_hover_box">
-											<div class="thumb_descript">
-												<p>Кольцевая лампа OKIRA LED RING DAR 120 26 сантиметров имеет небольшой вес и создана специально для перевозок из одного места в другое.</p>
+										<div class="thumb_content">
+											<div class="thumb_title">
+												<h3>Кольцевая лампа</h3>
+												<h3>OKIRA LED RING DAR</h3>
+												<h3>120</h3>
 											</div>
-											<div class="thumb_footer">
-												<div class="col">
-													<a href="#" class="icon_link">
-														<img src="img/hearth_2.svg" alt="" />
-													</a>
+											<div class="price_box">
+												<p>2000 RUB</p>
+											</div>
+											<div class="thumb_hover_box">
+												<div class="thumb_descript">
+													<p>Кольцевая лампа OKIRA LED RING DAR 120 26 сантиметров имеет небольшой вес и создана специально для перевозок из одного места в другое.</p>
 												</div>
-												<div class="col">
-													<div class="btn_wrapp_2">
-														<a href="#" class="red_pill_2"><img src="img/shopping_cart.svg" alt="" /></a>
+												<div class="thumb_footer">
+													<div class="col">
+														<a href="#" class="icon_link">
+															<img src="img/hearth_2.svg" alt="" />
+														</a>
 													</div>
-												</div>
-												<div class="col">
-													<a href="#" class="icon_link">
-														<img src="img/question.svg" alt="" />
-													</a>
+													<div class="col">
+														<div class="btn_wrapp_2">
+															<a href="#" class="red_pill_2"><img src="img/shopping_cart.svg" alt="" /></a>
+														</div>
+													</div>
+													<div class="col">
+														<a href="#" class="icon_link">
+															<img src="img/question.svg" alt="" />
+														</a>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="slide">
-							<div class="good_card">
-								<div class="inner_wrapp">
-									<div class="img_box">
-										<img src="img/image_07.jpg" alt="" />
-									</div>
-									<div class="thumb_content">
-										<div class="thumb_title">
-											<h3>Кольцевая лампа</h3>
-											<h3>OKIRA LED RING DAR</h3>
-											<h3>120</h3>
+							<div class="slide">
+								<div class="good_card">
+									<div class="inner_wrapp">
+										<div class="img_box">
+											<img src="img/image_07.jpg" alt="" />
 										</div>
-										<div class="price_box">
-											<p>2000 RUB</p>
-										</div>
-										<div class="thumb_hover_box">
-											<div class="thumb_descript">
-												<p>Кольцевая лампа OKIRA LED RING DAR 120 26 сантиметров имеет небольшой вес и создана специально для перевозок из одного места в другое.</p>
+										<div class="thumb_content">
+											<div class="thumb_title">
+												<h3>Кольцевая лампа</h3>
+												<h3>OKIRA LED RING DAR</h3>
+												<h3>120</h3>
 											</div>
-											<div class="thumb_footer">
-												<div class="col">
-													<a href="#" class="icon_link">
-														<img src="img/hearth_2.svg" alt="" />
-													</a>
+											<div class="price_box">
+												<p>2000 RUB</p>
+											</div>
+											<div class="thumb_hover_box">
+												<div class="thumb_descript">
+													<p>Кольцевая лампа OKIRA LED RING DAR 120 26 сантиметров имеет небольшой вес и создана специально для перевозок из одного места в другое.</p>
 												</div>
-												<div class="col">
-													<div class="btn_wrapp_2">
-														<a href="#" class="dark_pill">Купить</a>
+												<div class="thumb_footer">
+													<div class="col">
+														<a href="#" class="icon_link">
+															<img src="img/hearth_2.svg" alt="" />
+														</a>
 													</div>
-												</div>
-												<div class="col">
-													<a href="#" class="icon_link">
-														<img src="img/question.svg" alt="" />
-													</a>
+													<div class="col">
+														<div class="btn_wrapp_2">
+															<a href="#" class="dark_pill">Купить</a>
+														</div>
+													</div>
+													<div class="col">
+														<a href="#" class="icon_link">
+															<img src="img/question.svg" alt="" />
+														</a>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="slide">
-							<div class="good_card">
-								<div class="inner_wrapp">
-									<div class="img_box">
-										<img src="img/image_07.jpg" alt="" />
-									</div>
-									<div class="thumb_content">
-										<div class="thumb_title">
-											<h3>Кольцевая лампа</h3>
-											<h3>OKIRA LED RING DAR</h3>
-											<h3>120</h3>
+							<div class="slide">
+								<div class="good_card">
+									<div class="inner_wrapp">
+										<div class="img_box">
+											<img src="img/image_07.jpg" alt="" />
 										</div>
-										<div class="price_box">
-											<p>2000 RUB</p>
-										</div>
-										<div class="thumb_hover_box">
-											<div class="thumb_descript">
-												<p>Кольцевая лампа OKIRA LED RING DAR 120 26 сантиметров имеет небольшой вес и создана специально для перевозок из одного места в другое.</p>
+										<div class="thumb_content">
+											<div class="thumb_title">
+												<h3>Кольцевая лампа</h3>
+												<h3>OKIRA LED RING DAR</h3>
+												<h3>120</h3>
 											</div>
-											<div class="thumb_footer">
-												<div class="col">
-													<a href="#" class="icon_link">
-														<img src="img/hearth_2.svg" alt="" />
-													</a>
+											<div class="price_box">
+												<p>2000 RUB</p>
+											</div>
+											<div class="thumb_hover_box">
+												<div class="thumb_descript">
+													<p>Кольцевая лампа OKIRA LED RING DAR 120 26 сантиметров имеет небольшой вес и создана специально для перевозок из одного места в другое.</p>
 												</div>
-												<div class="col">
-													<div class="btn_wrapp_2">
-														<a href="#" class="red_pill_2"><img src="img/shopping_cart.svg" alt="" /></a>
+												<div class="thumb_footer">
+													<div class="col">
+														<a href="#" class="icon_link">
+															<img src="img/hearth_2.svg" alt="" />
+														</a>
 													</div>
-												</div>
-												<div class="col">
-													<a href="#" class="icon_link">
-														<img src="img/question.svg" alt="" />
-													</a>
+													<div class="col">
+														<div class="btn_wrapp_2">
+															<a href="#" class="red_pill_2"><img src="img/shopping_cart.svg" alt="" /></a>
+														</div>
+													</div>
+													<div class="col">
+														<a href="#" class="icon_link">
+															<img src="img/question.svg" alt="" />
+														</a>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -924,20 +953,10 @@
 
 		<footer class="footer_section">
 			<div class="row">
-				<div class="footer_cols">
-					<div class="col">
-						<a href="#" class="logo_2">
-							<img src="img/logo_2.svg" alt="" />
-						</a>
-						<ul class="list_links">
-							<li><a href="#">Подписаться на новости сайта</a></li>
-							<li><a href="#">Политика конфиденциальности</a></li>
-						</ul>
-						<div class="info_box">
-							<p><a href="#">Карта сайта</a></p>
-							<p>Copyright © 2020 okira-svet.ru</p>
-						</div>
-					</div>
+				<a href="#" class="logo_2 logo_resp">
+					<img src="img/logo_2.svg" alt="" />
+				</a>
+				<div class="footer_cols">					
 					<div class="col">
 						<ul class="seo_text">
 							<li><a href="#">Главная</a></li>
@@ -967,6 +986,19 @@
 							<li><a href="#"><img src="img/tel_red.svg" alt="" /></a></li>
 						</ul>
 					</div>
+					<div class="col">
+						<a href="#" class="logo_2">
+							<img src="img/logo_2.svg" alt="" />
+						</a>
+						<ul class="list_links">
+							<li><a href="#">Подписаться на новости сайта</a></li>
+							<li><a href="#">Политика конфиденциальности</a></li>
+						</ul>
+						<div class="info_box">
+							<p><a href="#">Карта сайта</a></p>
+							<p>Copyright © 2020 okira-svet.ru</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</footer>
@@ -977,11 +1009,12 @@
 
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/nouislider.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
 	<script src="vendors/js/jquery.js"></script>
 	<script src="slick/slick.js"></script>
-	<script src="vendors/js/jquery.fancybox.js"></script>
+	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU"></script>
 	<script src="vendors/js/nouislider.min.js"></script>
 	<script src="vendors/js/wNumb.min.js"></script>
 	<script src="js/scripts.js"></script>
