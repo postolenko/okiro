@@ -1,3 +1,11 @@
+function getAnimation() {
+  $(".animate").each(function() {
+    if( $(this).offset().top <= $(document).scrollTop() + $(window).height() ) {
+      $(this).addClass("active");
+    }
+  });
+}
+
 function getSlidesHeight() {
     $(".slider_2 .slide").css({"height" : "auto"});
     slidesHeight = $(".siderHeight").outerHeight(true) + 20;
@@ -96,12 +104,11 @@ $(window).resize(function() {
     getCatalogHeight();
     getMapPosition();
     getOrderBoxPosition();
+    getAnimation();
 });
 
 $(document).scroll(function() {
-
-
-
+    getAnimation();
 });
 
 $(document).ready(function() {
@@ -110,6 +117,7 @@ $(document).ready(function() {
     getSlidesHeight();
     getMapPosition();
     getOrderBoxPosition();
+    getAnimation();
     
 
     $(".catalog_title").on("click", function(e) {
@@ -305,7 +313,6 @@ $(document).ready(function() {
             speed: 1200,
             slidesToShow: 6,
             slidesToScroll: 1,
-            // variableWidth: true
             responsive: [
               {
                 breakpoint: 1360,
@@ -395,8 +402,8 @@ $(document).ready(function() {
         $(".promo_slider").not(".slick-initialized").slick({
             dots: false,
             arrows: true,
-            // autoplay: true,
-            autoplaySpeed: 4000,
+            autoplay: true,
+            autoplaySpeed: 8000,
             speed: 1200,
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -428,8 +435,8 @@ $(document).ready(function() {
         $(".slider_2").not(".slick-initialized").slick({
             dots: false,
             arrows: true,
-            // autoplay: true,
-            autoplaySpeed: 4000,
+            autoplay: true,
+            autoplaySpeed: 8000,
             speed: 1200,
             slidesToShow: 1,
             slidesToScroll: 1,

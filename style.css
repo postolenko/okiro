@@ -721,11 +721,11 @@ textarea:focus {
 .sign_list {
     display: flex;
     display: -webkit-flex;
-    margin: 0 -3px;
+    margin: 0 -4px;
 }
 
 .sign_list li {
-    padding: 0 3px;
+    padding: 0 4px;
     position: relative;
 }
 
@@ -4021,6 +4021,7 @@ textarea:focus {
 
 .good_card .red_pill_2 {
     display: block;
+    min-width: 100%;
     padding: 6px 10px 2px 10px;
     background: #BD1515;
     height: 41px;
@@ -5182,7 +5183,7 @@ textarea:focus {
 }
 
 .good_card_3 {
-    width: 211px;
+    width: 211px !important;
     margin: 7px 0 30px 0;
 }
 
@@ -5556,3 +5557,147 @@ footer {
     display: block;
     max-width: 100%;
 }
+
+/*-- Animation --*/
+
+.leftSlice {
+    position: relative;
+    left: -3%;
+    opacity: 0;
+    -webkit-transition-property: left, opacity;
+    -webkit-transition-duration: .7s;
+    -webkit-transition-delay: .3s;
+    -webkit-transition-timing-function: ease-in-out;
+
+    -moz-transition-property: left, opacity;
+    -moz-transition-duration: .7s;
+    -moz-transition-delay: .3s;
+    -moz-transition-timing-function: ease-in-out;
+
+    -ms-transition-property: left, opacity;
+    -ms-transition-duration: .7s;
+    -ms-transition-delay: .3s;
+    -ms-transition-timing-function: ease-in-out;
+
+    -o-transition-property: left, opacity;
+    -o-transition-duration: .7s;
+    -o-transition-delay: .3s;
+    -o-transition-timing-function: ease-in-out;
+
+    transition-property: left, opacity;
+    transition-duration: .7s;
+    transition-delay: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.animate.active.leftSlice {
+    left: 0;
+    opacity: 1;
+}
+
+.fadeIn {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: .7s;
+    -webkit-transition-delay: .3s;
+    -webkit-transition-timing-function: ease-in-out;
+
+    -moz-transition-property: opacity;
+    -moz-transition-duration: .7s;
+    -moz-transition-delay: .3s;
+    -moz-transition-timing-function: ease-in-out;
+
+    -ms-transition-property: opacity;
+    -ms-transition-duration: .7s;
+    -ms-transition-delay: .3s;
+    -ms-transition-timing-function: ease-in-out;
+
+    -o-transition-property: opacity;
+    -o-transition-duration: .7s;
+    --transition-delay: .3s;
+    -o-transition-timing-function: ease-in-out;
+
+    transition-property: opacity;
+    transition-duration: .7s;
+    transition-delay: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.animate.active.fadeIn {
+    opacity: 1;
+}
+
+.zoomFade {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    -webkit-transition-property: opacity, transform;
+    -webkit-transition-duration: .7s;
+    -webkit-transition-delay: .3s;
+    -webkit-transition-timing-function: ease-in-out;
+
+    -moz-transition-property: opacity, transform;
+    -moz-transition-duration: .7s;
+    -moz-transition-delay: .3s;
+    -moz-transition-timing-function: ease-in-out;
+
+    -ms-transition-property: opacity, transform;
+    -ms-transition-duration: .7s;
+    -ms-transition-delay: .3s;
+    -ms-transition-timing-function: ease-in-out;
+
+    -o-transition-property: opacity, transform;
+    -o-transition-duration: .7s;
+    --transition-delay: .3s;
+    -o-transition-timing-function: ease-in-out;
+
+    transition-property: opacity, transform;
+    transition-duration: .7s;
+    transition-delay: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.animate.active.zoomFade {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
+
+.fadeInUp {
+    position: relative;
+    bottom: -20px;
+    opacity: 0;
+    -webkit-transition-property: bottom, opacity;
+    -webkit-transition-duration: .7s;
+    -webkit-transition-delay: .3s;
+    -webkit-transition-timing-function: ease-in-out;
+
+    -moz-transition-property: bottom, opacity;
+    -moz-transition-duration: .7s;
+    -moz-transition-delay: .3s;
+    -moz-transition-timing-function: ease-in-out;
+
+    -ms-transition-property: bottom, opacity;
+    -ms-transition-duration: .7s;
+    -ms-transition-delay: .3s;
+    -ms-transition-timing-function: ease-in-out;
+
+    -o-transition-property: bottom, opacity;
+    -o-transition-duration: .7s;
+    -o-transition-delay: .3s;
+    -o-transition-timing-function: ease-in-out;
+
+    transition-property: bottom, opacity;
+    transition-duration: .7s;
+    transition-delay: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.animate.active.fadeInUp {
+    bottom: 0;
+    opacity: 1;
+}
+
+/*-- /Animation --*/
